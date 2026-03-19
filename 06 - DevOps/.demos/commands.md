@@ -93,6 +93,48 @@ docker run -d <registry-url>/<registry-name>/<image-name>
 docker run -p <host-port>:<container-port> <registry-url>/<registry-name>/<image-name>
 ```
 
+* Créer un conteneur à partir d'une image (volume anonyme) :
+
+```bash
+docker run -v /file/path/in/container <registry-url>/<registry-name>/<image-name>
+```
+
+* Créer un conteneur à partir d'une image (volume nommé) :
+
+```bash
+docker run -v volume-name:/file/path/in/container <registry-url>/<registry-name>/<image-name>
+```
+
+* Créer un conteneur à partir d'une image (bind mount) :
+
+```bash
+docker run -v /file/path/in/host:/file/path/in/container <registry-url>/<registry-name>/<image-name>
+```
+
+* Créer un conteneur à partir d'une image (bind mount read only) :
+
+```bash
+docker run -v /file/path/in/host:/file/path/in/container:ro <registry-url>/<registry-name>/<image-name>
+```
+
+* Créer un conteneur à partir d'une image (avec variable d'environnement) :
+
+```bash
+docker run -e "ENV_VARIABLE_NAME=value" <registry-url>/<registry-name>/<image-name>
+```
+
+* Executer une commande au sein d'un conteneur lancé :
+
+```bash
+docker exec <container-name|container-id> <command>
+```
+
+* Executer une commande au sein d'un conteneur lancé (interactive) :
+
+```bash
+docker exec -it <container-name|container-id> <command>
+```
+
 * Arrêter un conteneur :
 
 ```bash
