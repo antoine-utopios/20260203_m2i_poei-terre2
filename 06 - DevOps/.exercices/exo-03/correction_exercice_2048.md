@@ -1,4 +1,4 @@
-# Exercice Docker #1 - Réalisation d'un conteneur d'application web
+# Exercice Docker #3 - Réalisation d'un conteneur d'application web
 
 ## Sujet
 
