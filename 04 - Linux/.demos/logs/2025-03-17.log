@@ -1,0 +1,11 @@
+2025-03-17 08:03:10 INFO  Cache cleared
+2025-03-17 08:03:15 INFO  Generating daily report
+2025-03-17 08:03:20 INFO  Report generated successfully
+2025-03-17 08:03:25 INFO  Sending notifications to users
+2025-03-17 08:03:30 INFO  Notifications sent: 5 emails
+2025-03-17 08:03:32 ERROR Impossible to send mail
+2025-03-17 08:03:35 DEBUG Backup process initiated
+2025-03-17 08:03:45 INFO  Database backup completed
+2025-03-17 08:03:50 INFO  Backup file size: 2.5 GB
+2025-03-17 08:04:00 DEBUG Health check: all systems operational
+2025-03-17 08:04:05 INFO  Application health status: OK

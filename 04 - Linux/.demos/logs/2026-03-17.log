@@ -1,0 +1,36 @@
+2026-03-17 08:01:12 INFO  Application started
+2026-03-17 08:01:15 INFO  Loading configuration
+2026-03-17 08:01:18 WARNING Config file missing optional field: timeout
+2026-03-17 08:01:22 INFO  Connecting to database
+2026-03-17 08:01:25 ERROR Database connection failed
+2026-03-17 08:01:30 INFO  Retrying database connection
+2026-03-17 08:01:32 INFO  Database connected
+2026-03-17 08:01:40 INFO  Starting web server
+2026-03-17 08:01:42 DEBUG Initializing routes
+2026-03-17 08:01:44 DEBUG Loading middleware
+2026-03-17 08:01:46 INFO  Server listening on port 8080
+2026-03-17 08:02:01 INFO  User login attempt: alice
+2026-03-17 08:02:02 WARNING Invalid password for user: alice
+2026-03-17 08:02:10 INFO  User login attempt: bob
+2026-03-17 08:02:11 INFO  User login success: bob
+2026-03-17 08:02:30 ERROR Failed to load resource /api/orders
+2026-03-17 08:02:31 DEBUG Stacktrace id=45821
+2026-03-17 08:03:00 INFO  Scheduled job started: cleanup
+2026-03-17 08:03:01 INFO  Deleting temporary files
+2026-03-17 08:03:05 INFO  Cleanup finished successfully
+2026-03-17 08:03:15 INFO  Cache cleared
+2026-03-17 08:03:20 INFO  Backup process initiated
+2026-03-17 08:03:45 INFO  Backup completed successfully
+2026-03-17 08:04:00 INFO  User logout: bob
+2026-03-17 08:04:05 DEBUG Session cleaned up
+2026-03-17 08:05:30 WARNING Memory usage above threshold: 85%
+2026-03-17 08:06:00 INFO  Garbage collection started
+2026-03-17 08:06:15 INFO  Garbage collection completed
+2026-03-17 08:10:00 INFO  Scheduled report generation started
+2026-03-17 08:10:35 INFO  Report generated and sent to admin
+2026-03-17 08:15:00 DEBUG Health check: all systems operational
+2026-03-17 08:20:00 INFO  API rate limiter reset
+2026-03-17 08:25:10 INFO  Configuration reload
+2026-03-17 08:25:12 INFO  Configuration reloaded successfully
+2026-03-17 08:30:00 DEBUG Monitoring data collected
+2026-03-17 08:35:45 INFO  Application running normally
