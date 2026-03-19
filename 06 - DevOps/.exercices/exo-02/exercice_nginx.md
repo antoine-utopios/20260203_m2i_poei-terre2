@@ -1,4 +1,4 @@
-# Exercice Docker #1 - Réalisation d'un conteneur de base
+# Exercice Docker #1 - Réalisation d'un conteneur de serveur web
 
 ## Sujet
 
