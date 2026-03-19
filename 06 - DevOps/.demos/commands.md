@@ -75,8 +75,50 @@ docker run <registry-url>/<registry-name>/<image-name>
 docker run -it <registry-url>/<registry-name>/<image-name>
 ```
 
+* Créer un conteneur à partir d'une image (spécifier le nom du conteneur) :
+
+```bash
+docker run --name <container-name> <registry-url>/<registry-name>/<image-name>
+```
+
+* Créer un conteneur à partir d'une image (mode détaché) :
+
+```bash
+docker run -d <registry-url>/<registry-name>/<image-name>
+```
+
+* Créer un conteneur à partir d'une image (redirection de ports) :
+
+```bash
+docker run -p <host-port>:<container-port> <registry-url>/<registry-name>/<image-name>
+```
+
+* Arrêter un conteneur :
+
+```bash
+docker stop <container-name|container-id>
+```
+
+* Supprimer un conteneur :
+
+```bash
+docker rm <container-name|container-id>
+```
+
+* Supprimer un conteneur (sans avoir besoin de le stopper en amont):
+
+```bash
+docker rm -f <container-name|container-id>
+```
+
 * Lister les ressources docker:
 
 ```bash
 docker <resource-type> ls
+```
+
+* Supprimer toutes les ressources d'un certain type :
+
+```bash
+docker <resource-type> prune
 ```
