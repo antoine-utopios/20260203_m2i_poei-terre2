@@ -57,10 +57,22 @@ docker.io/library/<image-name> => <image-name>
 docker pull <registry-url>/<registry-name>/<image-name>
 ```
 
+* Sauvegarder l'état d'un conteneur en une nouvelle image:
+
+```bash
+docker commit <container-name|container-id> <registry-url>/<registry-name>/<image-name>
+```
+
 * Inspecter une image:
 
 ```bash
 docker inspect <registry-url>/<registry-name>/<image-name>
+```
+
+* Inspecter un conteneur:
+
+```bash
+docker inspect <container-name|container-id>
 ```
 
 * Créer un conteneur à partir d'une image :
@@ -123,6 +135,12 @@ docker run -v /file/path/in/host:/file/path/in/container:ro <registry-url>/<regi
 docker run -e "ENV_VARIABLE_NAME=value" <registry-url>/<registry-name>/<image-name>
 ```
 
+* Créer un conteneur à partir d'une image (avec réseau virtualisé par Docker) :
+
+```bash
+docker run --network <network-name> <registry-url>/<registry-name>/<image-name>
+```
+
 * Executer une commande au sein d'un conteneur lancé :
 
 ```bash
@@ -157,6 +175,12 @@ docker rm -f <container-name|container-id>
 
 ```bash
 docker <resource-type> ls
+```
+
+* Créer une nouvelle ressource docker:
+
+```bash
+docker <resource-type> create <resource-name> [OPTIONS...]
 ```
 
 * Supprimer toutes les ressources d'un certain type :
