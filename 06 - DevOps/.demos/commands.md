@@ -63,6 +63,12 @@ docker pull <registry-url>/<registry-name>/<image-name>
 docker commit <container-name|container-id> <registry-url>/<registry-name>/<image-name>
 ```
 
+* Compiler une nouvelle image:
+
+```bash
+docker build -t <registry-url>/<registry-name>/<image-name> <context-path>
+```
+
 * Inspecter une image:
 
 ```bash
